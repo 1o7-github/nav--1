@@ -123,11 +123,11 @@ var $lastLi = $siteList.find('li.last');
 var x = localStorage.getItem('x');
 var xObject = JSON.parse(x);
 var hashMap = xObject || [{
-  logo: 'A',
-  url: 'https://www.acfun.cn'
+  logo: 'H',
+  url: 'https://huaban.com/'
 }, {
-  logo: 'B',
-  url: 'https://www.bilibili.com'
+  logo: 'Z',
+  url: 'https://www.zhihu.com/'
 }];
 
 var simplifyUrl = function simplifyUrl(url) {
@@ -180,4 +180,4 @@ $(document).on('keypress', function (e) {
   }
 });
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=main.76309ad2.js.map
+//# sourceMappingURL=main.73ac84bd.js.map

@@ -21,7 +21,18 @@ img{
 
 /* style */
 body{
-    background: #f7f8f9;
+    background: #ffffff;
+}
+
+.myLogo {
+    width: 260px;
+    margin:20px auto 12px;
+}
+
+@media (min-width:500px) {
+    .myLogo {
+        margin: 80px auto 12px;
+    }
 }
 
 .globalHeader{
@@ -30,7 +41,7 @@ body{
 
 @media (min-width:500px) {
     .globalHeader {
-        margin: 60px 0;
+        margin: 20px 0 40px;
     }
 }
 
@@ -42,7 +53,7 @@ body{
 
 @media (min-width:500px) {
     .searchForm {
-        max-width: 400px;
+        max-width: 600px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -53,7 +64,7 @@ body{
     margin-right: 10px;
     height: 40px;
     padding: 0 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #dcdfe6;
     border-radius: 4px;
 }
 .searchForm > button{
@@ -61,9 +72,13 @@ body{
     padding: 0 28px;
     border: none;
     border-radius: 4px;
-    background: blue;
+    background: #5a9cf8;
     color: white;
     font-size: 16px;
+}
+
+.searchForm > button:hover{
+    background: #78aff9;
 }
 
 .globalMain {
@@ -93,7 +108,7 @@ body{
 
 @media (min-width:500px){
     .siteList > li{
-        margin-right: 25px;
+        margin-right: 20px;
     }
 }
 
@@ -104,19 +119,25 @@ body{
     flex-direction: column;
     align-items: center;
     background: white;
-    border: 1px solid #ddd;
     border-radius: 4px;
     padding: 20px 0;
     position: relative;
     cursor: pointer;
 }
+
+.siteList .site:hover{
+    background-color: #e8e8e9;
+}
+
 .siteList .site > .logo{
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 64px;
+    font-size: 28px;
+    background-color: #f1f3f4;
+    border-radius: 100px;
     text-transform: uppercase;
 }
 .siteList .site > .link{
@@ -125,15 +146,20 @@ body{
 }
 
 .siteList .site > .close{
-    position: absolute;
+    display: none;
     right: 8px;
     top: 4px;
-    display: none;
-    cursor:default;
 }
 
-.siteList .site:hover > .close{
-    display: block;
+@media (min-width:500px) {
+    .siteList .site > .close{
+        position: absolute;
+        display: none;
+        cursor:default;
+    }
+    .siteList .site:hover > .close{
+        display: block;
+    }
 }
 
 .siteList .addButton{
@@ -144,23 +170,29 @@ body{
     flex-direction: column;
     padding: 20px 0;
     background: white;
-    border: 1px solid #ddd;
-    border-radius: 4                                                                                                                                                                                                                                                                                                                                                                                             px;
+    border-radius: 4px;                                                                                                                                                                                                                                                                                                                                                                                             px;
 }
+
+.siteList .addButton:hover{
+    background-color: #e8e8e9;
+}
+
 .siteList .addButton .icon {
-    width: 56px;
-    height: 56px;
+    width: 28px;
+    height: 28px;
 }
 .siteList .addButton .text {
     font-size: 14px;
     margin-top: 4px;
 }
 .siteList .addButton .icon-wrapper {
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     display: flex;
+    background-color: #f1f3f4;
+    border-radius: 100px;
     justify-content: center;
     align-items: center;
 }
 
-/*# sourceMappingURL=style.974c6fc6.css.map */
+/*# sourceMappingURL=style.da43f12b.css.map */
